@@ -1,7 +1,9 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'maven'
 
 sourceCompatibility = 1.5
+group = "com.lx.tdd"
 version = '1.0'
 
 repositories {
@@ -16,4 +18,8 @@ idea {
     module {
         excludeDirs += [file('.idea'), file('.gradle'), file('gradle')]
     }
+}
+
+task createPomXml << {
+    pom{}.writeTo(file('pom.xml'))
 }
