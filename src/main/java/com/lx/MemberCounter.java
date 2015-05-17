@@ -13,8 +13,8 @@ public class MemberCounter {
 
     public List<Integer> countOff(int numberOfMembers) {
         ArrayList<Integer> results = new ArrayList<>();
-        while (numberOfMembers > 0) {
-            results.add(0, numberOfMembers--);
+        for (int id = 1; id <= numberOfMembers; id++) {
+            results.add(id);
         }
         return results;
     }
