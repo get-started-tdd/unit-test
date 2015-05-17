@@ -17,7 +17,8 @@ public class MemberCounter {
         List<Integer> ids = createMemberIDs(numberOfMembers);
         List<Integer> result = new ArrayList<>();
         while (!ids.isEmpty()) {
-            result.add(ids.remove(count - 1));
+            int next = (count - 1) % ids.size();
+            result.add(ids.remove(next));
         }
         return result;
     }
