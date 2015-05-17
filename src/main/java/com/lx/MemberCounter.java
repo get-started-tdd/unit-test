@@ -18,6 +18,7 @@ public class MemberCounter {
         List<Integer> result = new ArrayList<>();
         int i = 1;
         while (!ids.isEmpty()) {
+            //todo:此时想到了另一种更好的解决方案，可以通过直接出队第count-1的队员，就能去除内层循环
             for (int j = 0; j < ids.size(); j++) {
                 if (i == count) {
                     result.add(ids.remove(j));
