@@ -26,4 +26,11 @@ public class MemberCounterTest {
 
         assertThat(counter.countOff(1), equalTo(Arrays.asList(1)));
     }
+
+    @Test
+    public void displaysMembersIDOneByOneIfCountIs1() throws Exception {
+        MemberCounter counter = new MemberCounter(1);
+
+        assertThat(counter.countOff(3), equalTo(Arrays.asList(1, 2, 3)));
+    }
 }
