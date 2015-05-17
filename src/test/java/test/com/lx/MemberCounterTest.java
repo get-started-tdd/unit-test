@@ -36,7 +36,6 @@ public class MemberCounterTest {
     }
 
     @Test
-    @Ignore
     public void dequeueMemberIfMemberCountUpToM() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 

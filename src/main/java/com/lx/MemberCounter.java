@@ -16,10 +16,16 @@ public class MemberCounter {
     public List<Integer> countOff(int numberOfMembers) {
         List<Integer> ids = createMemberIDs(numberOfMembers);
         List<Integer> result = new ArrayList<>();
+        int i = 1;
         while (!ids.isEmpty()) {
             for (int j = 0; j < ids.size(); j++) {
-                result.add(ids.remove(j));
-                j--;
+                if (i == count) {
+                    result.add(ids.remove(j));
+                    j--;
+                    i=1;
+                } else {
+                    i++;
+                }
             }
         }
         return result;
