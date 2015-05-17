@@ -30,7 +30,6 @@ public class MemberCounterTest {
     }
 
     @Test
-    @Ignore
     public void displaysMembersIDOneByOneIfCountIs1() throws Exception {
         MemberCounter counter = new MemberCounter(1);
 
