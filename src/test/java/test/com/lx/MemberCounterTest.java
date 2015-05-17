@@ -22,7 +22,6 @@ public class MemberCounterTest {
     }
 
     @Test
-    @Ignore
     public void displaysMemberIDIfCountOffWithinAMember() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
