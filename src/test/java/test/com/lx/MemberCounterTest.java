@@ -33,4 +33,12 @@ public class MemberCounterTest {
 
         assertThat(counter.countOff(3), equalTo(Arrays.asList(1, 2, 3)));
     }
+
+    @Test
+    public void dequeueMemberIfMemberCountUpToM() throws Exception {
+        MemberCounter counter = new MemberCounter(3);
+
+        assertThat(counter.countOff(3), equalTo(Arrays.asList(3, 1, 2)));
+    }
+
 }
