@@ -15,7 +15,6 @@ import static org.junit.Assert.assertThat;
  */
 public class MemberCounterTest {
     @Test
-    @Ignore
     public void displaysNothingIfCountOffWithinNoMembers() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
