@@ -15,6 +15,7 @@ import static org.junit.Assert.assertThat;
  */
 public class MemberCounterTest {
     @Test
+    @Ignore
     public void displaysNothingIfCountOffWithinNoMembers() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
@@ -22,6 +23,7 @@ public class MemberCounterTest {
     }
 
     @Test
+    @Ignore
     public void displaysMemberIDIfCountOffWithinAMember() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
@@ -29,6 +31,7 @@ public class MemberCounterTest {
     }
 
     @Test
+    @Ignore
     public void displaysMembersIDOneByOneIfCountIs1() throws Exception {
         MemberCounter counter = new MemberCounter(1);
 
@@ -36,6 +39,7 @@ public class MemberCounterTest {
     }
 
     @Test
+    @Ignore
     public void dequeueMemberIfMemberCountUpToM() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
