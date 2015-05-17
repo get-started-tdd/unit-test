@@ -1,5 +1,6 @@
 package com.lx;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,6 +12,6 @@ public class MemberCounter {
     }
 
     public List<Integer> countOff(int numberOfMembers) {
-        return null;
+        return new ArrayList<>();
     }
 }
