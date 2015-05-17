@@ -3,6 +3,7 @@ package test.com.lx;
 import com.lx.MemberCounter;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.Collections;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -17,5 +18,12 @@ public class MemberCounterTest {
         MemberCounter counter = new MemberCounter(3);
 
         assertThat(counter.countOff(0), equalTo(Collections.<Integer>emptyList()));
+    }
+
+    @Test
+    public void displaysMemberIDIfCountOffWithinAMember() throws Exception {
+        MemberCounter counter = new MemberCounter(3);
+
+        assertThat(counter.countOff(1), equalTo(Arrays.asList(1)));
     }
 }
