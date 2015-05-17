@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
  */
 public class MemberCounterTest {
     @Test
-    public void noMembers() throws Exception {
+    public void displaysNothingIfCountOffWithinNoMembers() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
         assertThat(counter.countOff(0), equalTo(Collections.<Integer>emptyList()));
