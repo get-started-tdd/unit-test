@@ -12,6 +12,10 @@ public class MemberCounter {
     }
 
     public List<Integer> countOff(int numberOfMembers) {
-        return new ArrayList<>();
+        ArrayList<Integer> results = new ArrayList<>();
+        if (numberOfMembers > 0) {
+            results.add(numberOfMembers);
+        }
+        return results;
     }
 }
