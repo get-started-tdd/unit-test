@@ -15,14 +15,14 @@ import static org.junit.Assert.assertThat;
  */
 public class MemberCounterTest {
     @Test
-    public void displaysNothingIfCountOffWithinNoMembers() throws Exception {
+    public void displaysNothingIfNoMembersInTeam() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
         assertThat(counter.countOff(0), equalTo(Collections.<Integer>emptyList()));
     }
 
     @Test
-    public void displaysMemberIDIfCountOffWithinAMember() throws Exception {
+    public void displaysMemberIDIf1MemberInTeam() throws Exception {
         MemberCounter counter = new MemberCounter(3);
 
         assertThat(counter.countOff(1), equalTo(Arrays.asList(1)));
@@ -36,7 +36,7 @@ public class MemberCounterTest {
     }
 
     @Test
-    public void dequeueMemberIfMemberCountUpToM() throws Exception {
+    public void displaysDequeuedMembersInOrderIfMemberCountUpToCount() throws Exception {
         MemberCounter counter = new MemberCounter(2);
 
         assertThat(counter.countOff(3), equalTo(Arrays.asList(2, 1, 3)));
