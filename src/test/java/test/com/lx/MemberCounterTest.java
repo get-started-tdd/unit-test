@@ -1,7 +1,6 @@
 package test.com.lx;
 
 import com.lx.MemberCounter;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Arrays;
